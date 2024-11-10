@@ -1,0 +1,36 @@
+.underline {
+    color: red;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;   
+    background-color: #f1f1f1;
+    margin-top: 300px; 
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; 
+}
+
+footer li {
+    display: inline;         
+    margin: 0 10px;        
+}
+
+footer a {
+    text-decoration: none;   
+    color: #333;              
+}
+
+footer a:hover {
+    color: #007acc;            
+}
+
+h6{
+    margin-top: 1000px;
+}
