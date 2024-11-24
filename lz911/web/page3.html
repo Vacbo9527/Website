@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../script/page2.css" rel="stylesheet" />
+    <link href="../script/page3.css" rel="stylesheet" />
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="0">
@@ -13,26 +13,55 @@
 <title>アクセスいただいたサイトはメンテナンス中です</title>
 </head>
 <body style="display: flex; flex-direction: column; height: 100vh;">
-<div>
-<p>株式会社ＫＡＤＯＫＡＷＡ</p>
-</div>
+	<div class="background"></div> 
+	
+
+        <button id="menu-btn">菜单</button>
+
+    <div id="side-menu" class="side-menu">
+        <h2>更多:</h2>
+        <ul>
+            <li><a href="../index.html">返回主页</a></li>
+            <li><a href="./page1.html">团队宗旨</a></li>
+            <li><a href="./page2.html">这里有谁</a></li>
+            <li><a href="./page4/page4.html">全世界的团员</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menu-btn');
+        const sideMenu = document.getElementById('side-menu');
+        menuButton.addEventListener('click', () => {
+            sideMenu.style.transform = (sideMenu.style.transform === 'translateX(0px)') ? 'translateX(-100%)' : 'translateX(0)';
+        });
+    </script>
+
+<div class="content left-box">
+    <p>株式会社ＫＡＤＯＫＡＷＡ</p>
 <hr>
-<div style="text-align:center;">
-<p style="margin-top:60px;">このたびは株式会社ＫＡＤＯＫＡＷＡのサイトに<br>アクセスいただき誠にありがとうございます。</p>
-<p style="margin-top:30px;">アクセスいただいたサイトは、ただいま緊急メンテナンスを実施しております。<br>お客様には大変お手数おかけいたしますが、しばらく経ってから再度アクセスしてください。</p>
-<p style="margin-top:30px;">何卒、ご理解ご協力の程よろしくお願い申し上げます。</p>
+    <div style="text-align:center;">
+        <p style="margin-top:50px;">このたびは株式会社ＫＡＤＯＫＡＷＡ<br>アクセスいただき誠にありがとうござ。</p>
+        <p style="margin-top:25px;">アクセスいただいたサイトは、ただいま緊急メンテナンスを実施しております。<br>お客様には大変お手数おかけいたしますが、しばらく経ってから再度アクセスし。</p>
+        <p style="margin-top:25px;">何卒、ご理解ご協力の程よろしくお願い申し上げます。</p>
 
-<h6>...................</h6>
-<p>不在服务区内...</p>
-
-
-<footer>
-    <ul>
-        <li><a href="../index.html">返回主页</a></li>
-        <li><a href="page1.html">团队宗旨</a></li>
-        <li><a href="page2.html">这里有谁</a></li>
-        <li><a href="page4.html">活动展示</a></li>
-    </ul>
-</footer>
+        <h6>...................</h6>
+        <p>不在サービス区内...</p>
+    </div>
 </div>
+
+<div class="content lmid-box">
+    <hr>
+    <p><span class="undersocre">这里！</span>这里是<span class="undersocre">凉宫春日小说全系列</span>。txt真是好啊...(・-・*)</p>
+    <img src="../image/all.png" class="img3"/>
+    <a href="../other/凉宫春日系列.txt" download>点击查看文件</a>
+</div>
+
+<div class ="content rmid-box">
+    <hr>
+    <p><span class="undersocre">这里！</span>这里是一些<span class="undersocre">外传短篇小说</span>。txt真是好啊...(・-・*)</p>
+    <img src="../image/other.png" class="img3"/>
+    <a href="../other/RD.docx" download>点击查看文件</a>
+    <a href="../other/RT.txt" download>点击查看文件</a>
+</div>
+
 </body></html>
