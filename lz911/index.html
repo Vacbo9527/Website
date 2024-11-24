@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.2">
+    <link href="script/index.css" rel="stylesheet" />
+    <title>你好</title>
+</head>
+<body>
+    <div class="background"></div>
+    
+    <button id="menu-btn">菜单</button>
+
+    <div id="side-menu" class="side-menu">
+        <h2>更多:</h2>
+        <ul>
+            <li><a href="web/page1.html">团队宗旨</a></li>
+            <li><a href="web/page2.html">这里有谁</a></li>
+            <li><a href="web/page3.html">如何联系我们</a></li>
+            <li><a href="./web/page4/page4.html">全世界的团员</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuButton = document.getElementById('menu-btn');
+        const sideMenu = document.getElementById('side-menu');
+        menuButton.addEventListener('click', () => {
+            sideMenu.style.transform = (sideMenu.style.transform === 'translateX(0px)') ? 'translateX(-100%)' : 'translateX(0)';
+        });
+    </script>
+
+<div class="content">
+    <h1>截至目前没有人访问网站</h1>
+    <img src="image/title.jpg" alt="Welcome" class="gre"/>
+    <br><br>
+    <img src="image/R.jpg" alt="Badge" class="logo"/>
+    <br>
+    <p>入口</p>
+    <p>单击此处发送邮件 -> <img src="image/gsz.jpg" alt="gsz" class="small-icon"></p>
+</div>
+
+</body>
+</html>

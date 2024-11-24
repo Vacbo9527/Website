@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 30px;
+        }
+        video {
+            width: 80%;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+    </style>
+        <link href="world.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="background"></div>
+    <video id="myVideo" controls autoplay>
+        <source src="world.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        var video = document.getElementById("myVideo");
+        function getQueryParam(param) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+        var timeParam = getQueryParam("t");
+        if (timeParam) {
+            var timeInSeconds = parseInt(timeParam, 10);
+            if (!isNaN(timeInSeconds)) {
+                video.currentTime = timeInSeconds;
+            }
+        }
+    </script>
+
+</body>
+</html>
