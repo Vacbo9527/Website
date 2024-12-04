@@ -1,9 +1,8 @@
-/* 左侧菜单按钮样式 */
 #menu-btn {
-    position: fixed; /* 固定位置 */
+    position: fixed;
     top: 20px;
-    left: 20px; /* 位于左侧 */
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+    left: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
     color: #fff;
     padding: 10px 15px;
     font-size: 16px;
@@ -18,19 +17,18 @@
     background-color: rgba(0, 0, 0, 0.7);
 }
 
-/* 左侧菜单样式（默认隐藏） */
 .side-menu {
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px; /* 菜单宽度 */
-    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* 右侧阴影 */
-    transform: translateX(-100%); /* 初始时菜单被隐藏 */
-    transition: transform 0.3s ease; /* 菜单展开和收起的平滑过渡 */
-    z-index: 9; /* 确保菜单位于内容之上 */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease; 
+    z-index: 9;
 }
 
 .side-menu h2 {
@@ -59,31 +57,28 @@
     color: #007acc;
 }
 
-/* 内容部分样式 */
 .content {
     position: relative;
     z-index: 1;
     max-width: 800px;
     margin: 50px auto;
     padding: 30px;
-    background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
-    border: 2px solid #fff; /* 白色边框 */
-    border-radius: 10px; /* 圆角边框 */
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 2px solid #fff; 
     color: #333;
     text-align: center;
 }
 
-/* 背景图片样式 */
 .background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../image/bgp/5303198_p0.jpg'); /* 替换为你自己的图片路径 */
-    background-size: cover; /* 背景图片覆盖整个屏幕 */
-    background-position: center; /* 背景居中 */
-    filter: blur(8px); /* 设置虚化效果 */
-    z-index: -1; /* 背景图位于内容的下方 */
-    background-attachment: fixed; /* 背景固定，滚动时不动 */
+    background-image: url('../../image/bgp/5303198_p0.jpg');
+    background-size: cover; 
+    background-position: center; 
+    filter: blur(8px);
+    z-index: -1;
+    background-attachment: fixed;
 }
